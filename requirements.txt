@@ -4,7 +4,11 @@ import pandas as pd
 from flatten_json import flatten
 from tkinter import *
 
-import time
+# selenium 4
 from selenium import webdriver
+from selenium.webdriver.chrome.service import Service as ChromeService
+from webdriver_manager.chrome import ChromeDriverManager
+
+import time
 from selenium.webdriver.common.by import By
 import datetime as dt
