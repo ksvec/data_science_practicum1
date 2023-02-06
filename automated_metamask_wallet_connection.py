@@ -4,6 +4,10 @@ from selenium.webdriver.common.by import By
 import pandas as pd
 import datetime as dt
 
+# selenium 4
+from selenium import webdriver
+from selenium.webdriver.chrome.service import Service as ChromeService
+from webdriver_manager.chrome import ChromeDriverManager
 
 EXTENSION_PATH = '/Users/kyle/Library/Application Support/Google/Chrome/Default/Extensions/nkbihfbeogaeaoehlefnkodbefgpgknn/10.22.2_0.crx'
 opt = webdriver.ChromeOptions()
@@ -11,7 +15,8 @@ opt.add_extension(EXTENSION_PATH)
 
 PATH = "/Users/kyle/Desktop/Python/chromedriver"
 
-driver = webdriver.Chrome(PATH, chrome_options=opt)
+driver = webdriver.Chrome(PATH,service=ChromeService(ChromeDriverManager().install()), chrome_options=opt)
+#driver = webdriver.Chrome(PATH, chrome_options=opt)
 
 time.sleep(10)
 
