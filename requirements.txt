@@ -13,6 +13,8 @@ import time
 from selenium.webdriver.common.by import By
 import datetime as dt
 
+#requirements for GoogleSheets
+Python_API.json 
 from oauth2client.service_account import ServiceAccountCredentials
 import gspread
 from gspread_dataframe import set_with_dataframe
