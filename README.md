@@ -1,1 +1,3 @@
 Data Science Practicum - DeFi Analytics Dashboard
+
+Collecting and aggregating data from Decentralized Finance (DeFi) protocols via web scraping decentralized applications (dApp) websites and pinging specific API endpoints to create a DeFi risk and position dashboard. This allows for interaction with one location to analyze risk, positions and opportunities in the DeFi space while providing data insights, visualizations and analytics to the specific investment pools.  Real-time positions and pricing give an accurate view of valuations.  Support for additional dApps and protocols can be implemented easily.
